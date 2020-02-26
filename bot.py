@@ -11,7 +11,7 @@ bot = telebot.TeleBot(TOKEN,threaded=False)
 
 @bot.message_handler(content_types=['text'])
 def send_mes (message):
-    bot.send_message(message.chat.id, "Привет!\n"+res)
+    bot.send_message(message.chat.id, "Привет!\n")
 # RUN
 bot.polling(none_stop=True)
 
